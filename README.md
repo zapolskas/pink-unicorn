@@ -96,7 +96,7 @@ When .tar file is available in an air-gapped environment it can be loaded:
 docker load -i gamma1.tar
 ```
 
-Finally an old container should be stoperd and new one run:
+Finally an old container should be stoped and new one run:
 
 ```ps
 docker run -d -p 6001:80 --name gamma1 gamma1:1.0.0
