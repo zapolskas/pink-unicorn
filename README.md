@@ -46,6 +46,10 @@ docker build -t alpha2:1.0.0 .
 docker run -d -p 5000:80 --name alpha2 alpha2:1.0.0
 ```
 
+And checked by accessing configured port on a local machine via webbrowser, e.g.:
+
+<http://localhost:5000>
+
 ## Deployment packages
 
 There are two deployment packages, one for each bike model. Containers are defined in a docker-compose file. Package can be deployed by running:
