@@ -1,4 +1,6 @@
-FROM cpp-build-base:0.1.0 AS build
+FROM ubuntu:bionic AS build
+RUN apt-get update && \
+	apt-get install -y build-essential git cmake autoconf libtool pkg-config
 WORKDIR /src
 COPY CMakeLists.txt main.cpp ./
 RUN cmake . && make
